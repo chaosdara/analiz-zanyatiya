@@ -229,7 +229,7 @@ const DEFAULTS = {
  "subjects": [],
  "teachers": []
 };
-const DKEY = 'analiz_dicts_v5';
+const DKEY = 'analiz_dicts_v6';
 let D;
 try { D = JSON.parse(localStorage.getItem(DKEY)); } catch(e) { D = null; }
 if (!D) D = JSON.parse(JSON.stringify(DEFAULTS));
