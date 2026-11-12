@@ -509,7 +509,7 @@ const DICT_DEFAULTS = {
  "teachers": []
 };
 
-const DKEY = 'analiz_dicts_v1';
+const DKEY = 'analiz_dicts_v5';
 function loadDicts(){ try { const r = localStorage.getItem(DKEY); if (r) return JSON.parse(r); } catch(e){} return JSON.parse(JSON.stringify(DICT_DEFAULTS)); }
 const DICTS = loadDicts();
 Object.keys(DICT_DEFAULTS).forEach(function(k){ if (!DICTS[k]) DICTS[k] = DICT_DEFAULTS[k].slice(); });
